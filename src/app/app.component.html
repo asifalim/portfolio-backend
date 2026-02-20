@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Morgan — Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
 </head>
 <body>
 
@@ -14,17 +16,13 @@
   <a href="#" class="nav-logo" onclick="showPage('main')">Alim</a>
   <ul class="nav-links">
     <li><a href="#about" onclick="showPage('main')">About</a></li>
+    <a href="#education" onclick="showPage('main');toggleMobileMenu()">Education</a>
     <li><a href="#experience" onclick="showPage('main')">Experience</a></li>
-    <li><a href="#projects" onclick="showPage('main')">Projects</a></li>
     <li><a href="#skills" onclick="showPage('main')">Skills</a></li>
+    <li><a href="#projects" onclick="showPage('main')">Projects</a></li>
     <li><a href="#contact" onclick="showPage('main')">Contact</a></li>
-<!--    <li><a href="#chat-page" class="nav-chat-btn" onclick="showPage('chat'); return false;">-->
-<!--      🤖 AI Agent-->
-<!--    </a></li>-->
     <li>
-      <button (click)="goToChatBot()" class="back-btn">
-        ← Ai Agent
-      </button>
+      <button (click)="goToChatBot()" class="back-btn">🤖 Ai Agent</button>
     </li>
   </ul>
   <div class="hamburger" onclick="toggleMobileMenu()" id="hamburger">
@@ -39,7 +37,7 @@
   <a href="#skills" onclick="showPage('main');toggleMobileMenu()">Skills</a>
   <a href="#projects" onclick="showPage('main');toggleMobileMenu()">Projects</a>
   <a href="#contact" onclick="showPage('main');toggleMobileMenu()">Contact</a>
-  <a href="#chat-page" onclick="showPage('chat');toggleMobileMenu();return false;">🤖 AI Agent Chat</a>
+  <a href="#chat-page" onclick="showPage('chat');toggleMobileMenu();return false;">🤖 AI Agent</a>
 </div>
 
 <!-- ─── MAIN PAGE ─── -->
@@ -52,18 +50,19 @@
       <div class="hero-orb orb2"></div>
       <div class="hero-orb orb3"></div>
     </div>
-    <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6rem 2rem 4rem;">
+    <div
+      style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:6rem 2rem 4rem;">
       <div class="hero-content">
         <div class="hero-badge">Available for opportunities</div>
         <h1 class="hero-title">
           Hi, I'm <span class="gradient-text">Alim</span><br>
         </h1>
         <p class="hero-sub">
-          Building scalable, clean, and performant applications with a passion for elegant code and meaningful user experiences.
+          Building scalable, clean, and performant applications with a passion for elegant code and
+          meaningful user experiences.
         </p>
         <div class="hero-ctas">
           <a href="#projects" class="btn-primary">View My Work ↓</a>
-          <a href="#chat-page" class="btn-secondary" onclick="showPage('chat');return false;">Chat with My AI Agent 🤖</a>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
@@ -102,13 +101,21 @@
         </div>
       </div>
       <div class="about-text reveal-delay-1">
-        <p>Hey! I'm <strong>Alex Morgan</strong>, a Software Engineer with 1.5 years of hands-on industry experience building robust backend systems and modern web applications.</p>
-        <p>I graduated with a degree in Computer Science and jumped straight into the industry, where I've been crafting <strong>REST APIs, microservices, and full-stack applications</strong> using Java, Spring Boot, Angular, and PostgreSQL.</p>
-        <p>I care deeply about <strong>code quality, performance, and developer experience</strong>. When I'm not coding, I'm exploring new technologies, contributing to open-source, or mentoring junior developers in my community.</p>
-        <p>My goal is to grow into a <strong>Senior Engineer</strong> and eventually a tech lead — someone who not only writes excellent code but also shapes engineering culture.</p>
+        <p>Hey! I'm <strong>Alim Uddin Asif</strong>, a Software Engineer with 1.5 years of hands-on
+          industry experience building robust backend systems and modern web applications.</p>
+        <p>I graduated with a degree in Computer Science and jumped straight into the industry,
+          where I've been crafting <strong>REST APIs, microservices, and full-stack
+            applications</strong> using Java, Spring Boot, Angular, and PostgreSQL.</p>
+        <p>I care deeply about <strong>code quality, performance, and developer experience</strong>.
+          When I'm not coding, I'm exploring new technologies, contributing to open-source, or
+          mentoring junior developers in my community.</p>
+        <p>My goal is to grow into a <strong>Senior Engineer</strong> and eventually a tech lead —
+          someone who not only writes excellent code but also shapes engineering culture.</p>
         <div class="about-links">
-          <a class="icon-btn" href="https://github.com/asifalim" target="https://github.com/asifalim">⚡ GitHub</a>
-          <a class="icon-btn" href="https://www.linkedin.com/in/alim-uddin-asif/" target="https://www.linkedin.com/in/alim-uddin-asif/">💼 LinkedIn</a>
+          <a class="icon-btn" href="https://github.com/asifalim"
+             target="https://github.com/asifalim">⚡ GitHub</a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/alim-uddin-asif/"
+             target="https://www.linkedin.com/in/alim-uddin-asif/">💼 LinkedIn</a>
           <a class="icon-btn" href="#" target="_blank">📄 Resume</a>
           <a class="icon-btn" href="mailto:asifalimnstu@gmail.com">✉️ Email</a>
         </div>
@@ -122,20 +129,26 @@
   <section id="education">
     <div class="section-tag">Education</div>
     <h2 class="section-title">Academic foundation</h2>
-    <p class="section-desc">Where it all started — building the foundation of logical thinking and engineering principles.</p>
+    <p class="section-desc">Where it all started — building the foundation of logical thinking and
+      engineering principles.</p>
     <div class="edu-timeline">
       <div class="edu-item">
         <div class="edu-year">2019 — 2024</div>
         <div class="edu-degree">B.Sc. in Computer Science and Telecommunication Engineering</div>
         <div class="edu-school">Noakhali Science and Technology University</div>
-        <div class="edu-desc">Focused on algorithms, data structures, software engineering principles, and database systems. Completed a final year project on distributed microservices architecture.</div>
+        <div class="edu-desc">Focused on algorithms, data structures, software engineering
+          principles, and database systems. Completed a final year project on distributed
+          microservices architecture.
+        </div>
         <span class="edu-badge">CGPA: 3.46 / 4.00</span>
       </div>
       <div class="edu-item reveal-delay-1">
         <div class="edu-year">2016 — 2018</div>
         <div class="edu-degree">Higher Secondary Certificate (HSC) — Science</div>
         <div class="edu-school">Noakhali Govt. College</div>
-        <div class="edu-desc">Majored in Physics, Chemistry, and Mathematics. Developed a strong analytical mindset and problem-solving foundation.</div>
+        <div class="edu-desc">Majored in Physics, Chemistry, and Mathematics. Developed a strong
+          analytical mindset and problem-solving foundation.
+        </div>
         <span class="edu-badge">GPA: 4.92 / 5.00</span>
       </div>
     </div>
@@ -147,7 +160,8 @@
   <section id="experience">
     <div class="section-tag">Experience</div>
     <h2 class="section-title">Where I've worked</h2>
-    <p class="section-desc">Building real-world systems, solving complex problems, and growing as an engineer every single day.</p>
+    <p class="section-desc">Building real-world systems, solving complex problems, and growing as an
+      engineer every single day.</p>
     <div class="exp-grid">
       <div class="exp-card">
         <div class="exp-header">
@@ -157,7 +171,11 @@
           </div>
           <span class="exp-period">Dec 2024 – Present</span>
         </div>
-        <p class="exp-desc">Working on a B2B SaaS product serving 50,000+ active users. Developed and maintained RESTful APIs with Spring Boot, implemented JWT-based authentication, optimized PostgreSQL queries reducing load time by 40%, and built reusable Angular components for the admin dashboard. Actively participated in daily standups, sprint planning, and code reviews.</p>
+        <p class="exp-desc">Working on a B2B SaaS product serving 50,000+ active users. Developed
+          and maintained RESTful APIs with Spring Boot, implemented JWT-based authentication,
+          optimized PostgreSQL queries reducing load time by 40%, and built reusable Angular
+          components for the admin dashboard. Actively participated in daily standups, sprint
+          planning, and code reviews.</p>
         <div class="exp-tags">
           <span class="tag">Spring Boot</span>
           <span class="tag">Angular</span>
@@ -176,7 +194,10 @@
           </div>
           <span class="exp-period">Jan 2024 – Jun 2024</span>
         </div>
-        <p class="exp-desc">Contributed to building an internal data visualization dashboard. Built RESTful endpoints using Spring Boot and integrated them with a React frontend. Wrote unit tests using JUnit and Mockito, achieving 85% test coverage. Collaborated with senior engineers and participated in architecture discussions.</p>
+        <p class="exp-desc">Contributed to building an internal data visualization dashboard. Built
+          RESTful endpoints using Spring Boot and integrated them with a React frontend. Wrote unit
+          tests using JUnit and Mockito, achieving 85% test coverage. Collaborated with senior
+          engineers and participated in architecture discussions.</p>
         <div class="exp-tags">
           <span class="tag">Spring Boot</span>
           <span class="tag">React</span>
@@ -195,7 +216,8 @@
   <section id="skills">
     <div class="section-tag">Skills & Technologies</div>
     <h2 class="section-title">My technical toolkit</h2>
-    <p class="section-desc">Tools, languages, and frameworks I've worked with in production and personal projects.</p>
+    <p class="section-desc">Tools, languages, and frameworks I've worked with in production and
+      personal projects.</p>
     <div class="skills-grid">
       <div class="skill-category">
         <div class="skill-cat-title"><span class="skill-cat-icon">⚙️</span> Backend</div>
@@ -274,12 +296,15 @@
   <section id="projects">
     <div class="section-tag">Projects</div>
     <h2 class="section-title">Things I've built</h2>
-    <p class="section-desc">A mix of production-grade and personal projects that showcase my technical range and problem-solving approach.</p>
+    <p class="section-desc">A mix of production-grade and personal projects that showcase my
+      technical range and problem-solving approach.</p>
     <div class="projects-grid">
       <div class="project-card">
         <div class="project-icon">🛒</div>
         <div class="project-title">ShopStream — E-commerce Platform</div>
-        <p class="project-desc">A full-featured B2C e-commerce platform with product catalog, cart management, order processing, payment gateway integration (Stripe), and an admin dashboard for inventory management.</p>
+        <p class="project-desc">A full-featured B2C e-commerce platform with product catalog, cart
+          management, order processing, payment gateway integration (Stripe), and an admin dashboard
+          for inventory management.</p>
         <div class="project-stack">
           <span class="stack-tag">Spring Boot</span>
           <span class="stack-tag">Angular</span>
@@ -296,7 +321,9 @@
       <div class="project-card reveal-delay-1">
         <div class="project-icon">📋</div>
         <div class="project-title">TaskFlow — Project Management Tool</div>
-        <p class="project-desc">A Trello-inspired project management application with drag-and-drop kanban boards, real-time collaboration via WebSockets, role-based access control, and team analytics dashboard.</p>
+        <p class="project-desc">A Trello-inspired project management application with drag-and-drop
+          kanban boards, real-time collaboration via WebSockets, role-based access control, and team
+          analytics dashboard.</p>
         <div class="project-stack">
           <span class="stack-tag">Spring Boot</span>
           <span class="stack-tag">Angular</span>
@@ -312,7 +339,9 @@
       <div class="project-card reveal-delay-2">
         <div class="project-icon">🤖</div>
         <div class="project-title">AI Portfolio Chatbot</div>
-        <p class="project-desc">A personal AI agent chatbot integrated into this portfolio. Built a Spring Boot backend that proxies requests to the Claude API, returning contextual, personality-driven responses about my background and skills.</p>
+        <p class="project-desc">A personal AI agent chatbot integrated into this portfolio. Built a
+          Spring Boot backend that proxies requests to the Claude API, returning contextual,
+          personality-driven responses about my background and skills.</p>
         <div class="project-stack">
           <span class="stack-tag">Spring Boot</span>
           <span class="stack-tag">Claude API</span>
@@ -328,7 +357,9 @@
       <div class="project-card">
         <div class="project-icon">📊</div>
         <div class="project-title">FinanceTrack — Budget Tracker</div>
-        <p class="project-desc">A personal finance tracking app with expense categorization, monthly budget goals, visual analytics using Chart.js, CSV import/export, and intelligent spending insights.</p>
+        <p class="project-desc">A personal finance tracking app with expense categorization, monthly
+          budget goals, visual analytics using Chart.js, CSV import/export, and intelligent spending
+          insights.</p>
         <div class="project-stack">
           <span class="stack-tag">Spring Boot</span>
           <span class="stack-tag">Angular</span>
@@ -344,7 +375,9 @@
       <div class="project-card reveal-delay-1">
         <div class="project-icon">🔐</div>
         <div class="project-title">AuthGuard — Auth Microservice</div>
-        <p class="project-desc">A standalone authentication microservice supporting JWT, OAuth2 (Google/GitHub), refresh token rotation, rate limiting, and multi-factor authentication — designed to plug into any backend.</p>
+        <p class="project-desc">A standalone authentication microservice supporting JWT, OAuth2
+          (Google/GitHub), refresh token rotation, rate limiting, and multi-factor authentication —
+          designed to plug into any backend.</p>
         <div class="project-stack">
           <span class="stack-tag">Spring Security</span>
           <span class="stack-tag">OAuth2</span>
@@ -359,7 +392,9 @@
       <div class="project-card reveal-delay-2">
         <div class="project-icon">📚</div>
         <div class="project-title">DevBlog — Tech Blogging Platform</div>
-        <p class="project-desc">A developer-focused blogging platform with Markdown editor, syntax highlighting, tag-based search, newsletter subscription via email, and a CMS for content management.</p>
+        <p class="project-desc">A developer-focused blogging platform with Markdown editor, syntax
+          highlighting, tag-based search, newsletter subscription via email, and a CMS for content
+          management.</p>
         <div class="project-stack">
           <span class="stack-tag">Spring Boot</span>
           <span class="stack-tag">Angular</span>
@@ -443,7 +478,8 @@
     <div class="contact-wrapper">
       <div class="contact-info">
         <h3>Get in touch</h3>
-        <p>Whether you have a job opportunity, a project idea, or just want to connect — my inbox is always open. I'll get back to you within 24 hours.</p>
+        <p>Whether you have a job opportunity, a project idea, or just want to connect — my inbox is
+          always open. I'll get back to you within 24 hours.</p>
         <div class="contact-items">
           <a class="contact-item" href="mailto:alex@example.com">
             <div class="contact-item-icon">✉️</div>
@@ -453,7 +489,8 @@
             <div class="contact-item-icon">📱</div>
             +880 1332812998
           </a>
-          <a class="contact-item" href="https://www.linkedin.com/in/alim-uddin-asif/" target="_blank">
+          <a class="contact-item" href="https://www.linkedin.com/in/alim-uddin-asif/"
+             target="_blank">
             <div class="contact-item-icon">💼</div>
             linkedin.com/in/alim
           </a>
@@ -480,16 +517,20 @@
         </div>
         <div class="form-group">
           <label>Message</label>
-          <textarea rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          <textarea rows="5" placeholder="Tell me about your project or opportunity..."
+                    required></textarea>
         </div>
-        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message ✉️</button>
+        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send
+          Message ✉️
+        </button>
       </form>
     </div>
   </section>
 
   <footer>
     <p>Designed & built by <a href="#">Asif Alim</a> · 2026 · All rights reserved</p>
-    <p style="margin-top:0.5rem;font-size:0.78rem;">Built with Angular + Spring Boot + PostgresSQL</p>
+    <p style="margin-top:0.5rem;font-size:0.78rem;">Built with Angular + Spring Boot +
+      PostgresSQL</p>
   </footer>
 
 </div><!-- end main-page -->
@@ -514,8 +555,12 @@
 
   // ─── SCROLL ANIMATIONS ───
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+      }
+    });
+  }, {threshold: 0.1});
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
@@ -525,7 +570,7 @@
       const href = a.getAttribute('href');
       if (href && href !== '#' && document.querySelector(href)) {
         e.preventDefault();
-        document.querySelector(href).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        document.querySelector(href).scrollIntoView({behavior: 'smooth', block: 'start'});
       }
     });
   });
@@ -543,150 +588,6 @@
     }, 3000);
   }
 
-  // ─── CHAT AI AGENT ───
-  const SYSTEM_PROMPT = `You are an AI agent representing Alex Morgan, a Software Engineer with 1.5 years of industry experience. You speak in first person as Alex — friendly, professional, warm, and concise.
-
-Alex's profile:
-- Role: Software Engineer at TechNova Solutions Ltd. (Jul 2024 – Present)
-- Previous: Software Engineer Intern at DataBridge Technologies (Jan–Jun 2024)
-- Education: B.Sc. in Computer Science & Engineering, CGPA 3.72/4.0 (graduated 2024)
-- Location: Dhaka, Bangladesh
-- Email: alex@example.com
-
-Tech Stack:
-- Backend: Java, Spring Boot, Spring Security, Hibernate/JPA, REST APIs, Microservices, Gradle
-- Frontend: Angular, TypeScript, JavaScript, HTML/CSS, RxJS, Tailwind CSS
-- Database: PostgreSQL, MySQL, Redis
-- DevOps: Docker, Git, GitHub Actions, CI/CD
-- Testing: JUnit 5, Mockito, TDD
-- Concepts: OOP, SOLID, Design Patterns, Agile/Scrum, Clean Architecture
-
-Projects: ShopStream (e-commerce), TaskFlow (project management), AI Portfolio Chatbot, FinanceTrack, AuthGuard, DevBlog
-
-Certifications: Oracle Java SE 17 Certified, Spring Framework Essentials, AWS Cloud Practitioner, Angular Certification
-
-Goals: Grow into a Senior Engineer, eventually a tech lead. Passionate about clean code, performance, and developer experience.
-
-Open to: full-time opportunities, remote or Dhaka-based, backend-heavy or full-stack roles.
-
-Keep answers concise (2-4 sentences), friendly, and direct. Use "I" — you ARE Alex. Don't say "Alex" in third person.`;
-
-  const chatMessages = document.getElementById('chatMessages');
-  const chatInput = document.getElementById('chat-input');
-  const suggestions = document.getElementById('suggestions');
-  let conversationHistory = [];
-
-  function appendMessage(role, content) {
-    const div = document.createElement('div');
-    div.className = `message ${role === 'user' ? 'user' : 'ai'}`;
-    const av = document.createElement('div');
-    av.className = `msg-avatar ${role === 'user' ? 'user-av' : 'ai'}`;
-    av.textContent = role === 'user' ? 'You' : 'AM';
-    const bubble = document.createElement('div');
-    bubble.className = 'msg-bubble';
-    bubble.textContent = content;
-    div.appendChild(av);
-    div.appendChild(bubble);
-    chatMessages.appendChild(div);
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-    return div;
-  }
-
-  function showTyping() {
-    const div = document.createElement('div');
-    div.className = 'message ai';
-    div.id = 'typing';
-    div.innerHTML = `<div class="msg-avatar ai">AM</div><div class="msg-bubble"><div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div></div>`;
-    chatMessages.appendChild(div);
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-  }
-
-  function removeTyping() {
-    const t = document.getElementById('typing');
-    if (t) t.remove();
-  }
-
-  async function sendMessage() {
-    const text = chatInput.value.trim();
-    if (!text) return;
-
-    suggestions.style.display = 'none';
-    appendMessage('user', text);
-    conversationHistory.push({ role: 'user', content: text });
-    chatInput.value = '';
-    chatInput.style.height = 'auto';
-    showTyping();
-
-    try {
-      const response = await fetch('http://localhost:8082/api/v1/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
-          max_tokens: 1000,
-          system: SYSTEM_PROMPT,
-          messages: conversationHistory
-        })
-      });
-
-      const data = await response.json();
-      removeTyping();
-
-      const reply = data.content && data.content[0] ? data.content[0].text : "Sorry, I'm having trouble responding right now. Please try again!";
-      conversationHistory.push({ role: 'assistant', content: reply });
-      appendMessage('ai', reply);
-
-    } catch (err) {
-      removeTyping();
-      // Fallback responses when API isn't connected
-      const fallbacks = getFallback(text);
-      conversationHistory.push({ role: 'assistant', content: fallbacks });
-      appendMessage('ai', fallbacks);
-    }
-  }
-
-  function getFallback(msg) {
-    const lower = msg.toLowerCase();
-    if (lower.includes('stack') || lower.includes('tech') || lower.includes('skill'))
-      return "My main stack is Java + Spring Boot on the backend and Angular on the frontend, with PostgreSQL as my primary database. I also work with Docker, Redis, and CI/CD pipelines daily. I'd say backend is my strength, but I'm comfortable going full-stack!";
-    if (lower.includes('experience') || lower.includes('work'))
-      return "I'm currently at Brac IT Services as a Software Engineer, where I build REST APIs, handle authentication, and optimize database queries for a SaaS product serving 50k+ users. Before that, I interned at DataBridge Technologies for 6 months. About 1.5 years of total industry experience!";
-    if (lower.includes('project'))
-      return "I've built a few things I'm proud of! ShopStream is a full e-commerce platform, TaskFlow is a kanban board app with real-time collaboration, and you're literally using my AI Chatbot project right now 😄. Check the Projects section for more details!";
-    if (lower.includes('open') || lower.includes('job') || lower.includes('hire') || lower.includes('available'))
-      return "Yes, I'm open to new opportunities! I'm particularly interested in backend-heavy or full-stack roles where I can grow. I'm based in Dhaka but open to remote work too. Feel free to reach out at alex@example.com!";
-    if (lower.includes('education') || lower.includes('degree') || lower.includes('university'))
-      return "I graduated in 2024 with a B.Sc. in Computer Science and Telecommunication Engineering with a CGPA of 3.46/4.0. My final year project was on distributed microservices architecture — which is kind of how I fell in love with backend development!";
-    if (lower.includes('goal') || lower.includes('future') || lower.includes('plan'))
-      return "My goal is to grow into a Senior Engineer within the next 2-3 years, and eventually move into a tech lead role. I want to become someone who not only writes excellent code but also shapes engineering culture. I'm also really interested in system design and distributed systems!";
-    if (lower.includes('hello') || lower.includes('hi') || lower.includes('hey'))
-      return "Hey! Great to meet you! I'm Alex's AI Agent. Feel free to ask me about my skills, projects, experience, or anything else you'd like to know. What's on your mind? 😊";
-    return "That's a great question! To give you the most accurate answer, I'd recommend reaching out to Alex directly at alex@example.com. He usually responds within 24 hours and loves connecting with people in the tech community!";
-  }
-
-  function sendSuggestion(btn) {
-    chatInput.value = btn.textContent;
-    sendMessage();
-  }
-
-  function handleChatKey(e) {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      sendMessage();
-    }
-  }
-
-  function autoResize(el) {
-    el.style.height = 'auto';
-    el.style.height = Math.min(el.scrollHeight, 120) + 'px';
-  }
-
-  // ─── RE-OBSERVE AFTER MAIN PAGE SHOWS ───
-  function reObserve() {
-    document.querySelectorAll('.reveal').forEach(el => {
-      if (!el.classList.contains('visible')) observer.observe(el);
-    });
-  }
 </script>
 </body>
 </html>
