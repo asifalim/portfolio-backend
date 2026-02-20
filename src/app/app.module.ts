@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import {HttpClientModule} from "@angular/common/http";
+import {ChatService} from "./core/services/chat.service";
 
 @NgModule({
   declarations: [
@@ -12,9 +14,12 @@ import { ChatComponent } from './pages/chat/chat.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ChatService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
