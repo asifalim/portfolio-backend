@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Morgan — Software Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
-    rel="stylesheet">
-</head>
-<body>
 
 <!-- ─── NAVBAR ─── -->
 <nav id="navbar">
-  <a href="#" class="nav-logo" onclick="showPage('main')">Alim</a>
+  <a href="#" class="nav-logo" onclick="showPage('main')">Home</a>
   <ul class="nav-links">
     <li><a href="#about" onclick="showPage('main')">About</a></li>
     <a href="#education" onclick="showPage('main');toggleMobileMenu()">Education</a>
@@ -37,7 +25,7 @@
   <a href="#skills" onclick="showPage('main');toggleMobileMenu()">Skills</a>
   <a href="#projects" onclick="showPage('main');toggleMobileMenu()">Projects</a>
   <a href="#contact" onclick="showPage('main');toggleMobileMenu()">Contact</a>
-  <a href="#chat-page" onclick="showPage('chat');toggleMobileMenu();return false;">🤖 AI Agent</a>
+  <button (click)="goToChatBot()" class="back-btn">🤖 Ai Agent</button>
 </div>
 
 <!-- ─── MAIN PAGE ─── -->
@@ -589,6 +577,4 @@
   }
 
 </script>
-</body>
-</html>
 <router-outlet></router-outlet>
