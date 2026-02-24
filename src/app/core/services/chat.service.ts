@@ -14,6 +14,7 @@ export interface ChatRequest {
 }
 
 export interface ChatResponse {
+  response: string;
   message: string;
   role: string;
   success: boolean;

@@ -9,7 +9,7 @@ import { ChatMessage, ChatService } from "../../core/services/chat.service";
 export class ChatComponent implements OnInit {
 
   messages: ChatMessage[] = [
-    { role: 'assistant', content: "Hey there! 👋 I'm Alim's AI Agent — a digital version of Asif Alim, Software Engineer. I can tell you about Alex's experience, skills, projects, education, and career goals. What would you like to know?" }
+    { role: 'assistant', content: "Hey there! 👋 I'm Alim's AI Agent — a digital version of Asif Alim, Software Engineer. I can tell you about Alim's experience, skills, projects, education, and career goals. What would you like to know?" }
   ];
 
   inputText = '';
@@ -76,8 +76,8 @@ export class ChatComponent implements OnInit {
     this.chatService.sendMessage({ message, history }).subscribe({
       next: (res) => {
         this.isTyping = false;
-        if (res.success) {
-          this.messages.push({ role: 'assistant', content: res.message });
+        if (res) {
+          this.messages.push({ role: 'assistant', content: res.response });
         }
         this.scrollToBottom();
       },
